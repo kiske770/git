@@ -26,3 +26,25 @@
 **git branch [name branch]** --> crea una rama apartir de la rama donde estamos ubicados.
 **git merge [nombre de la rama]** --> hace una fusion entre dos ramas. Normalmente se trae los cambios de la rama mencionada hacia la rama donde estamos ubicados. (E.g. si estoy en master trae los cambios de la rama mencionada hacia master).
 **git branch** --> lista las ramas que estan creadas.
+# **configurar tus llaves ssh en local**
+- las llaves son por usuario.
+- es recomendable crear las llaves en el home (~).
+- es necesario que el email del usuario de github sea el mismo que esta en la configuracion local de git.
+**ssh-keygen -t rsa -b 4096 -C "[correo electronico]"** --> comando para crear la llave ssh en el ambiente local.
+- la llave public tiene como extension .pub
+- la llave public se ebe de llevar a github
+**eval $(ssh-agent -s)** --> comando para verificar que el servidor de ssh este corriendo (aplica para entornos windows).
+**eval "$(ssh-agent -s)"** --> comando para verificar que el servidor de ssh este corriendo (aplica para entornos Mac).
+- para ambientes Mac es necesario que exista un archivo .config en la carpeta donde estan las llaves. Sino existe se debe de crear. El archivo debe de contener lo siguiente:
+
+**
+Host *
+        AddKeysToAgent yes
+        UseKeychain yes
+        IdentityFile [ruta donde estan las llaves + nombre de la llave privada]
+**
+- guardar sin extension.
+
+**ssh-add [ruta donde esta la llave privada]** --> comando para agregar la llave (aplica para entorno windows)
+**ssh-add -K [ruta donde esta la llave privada]** --> comando para agregar la llave (aplica para entorno MacOs)
+**git remote set-url origin [url en https or ssh]** --> comando para cambiar la url de los repositorios remotos.
