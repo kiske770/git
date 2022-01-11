@@ -48,3 +48,19 @@ Host *
 **ssh-add [ruta donde esta la llave privada]** --> comando para agregar la llave (aplica para entorno windows)
 **ssh-add -K [ruta donde esta la llave privada]** --> comando para agregar la llave (aplica para entorno MacOs)
 **git remote set-url origin [url en https or ssh]** --> comando para cambiar la url de los repositorios remotos.
+**git log --all --graph** --> comano para pintar los todos los commits de manera grafica.
+**git log --all --graph --decorate --oneline** --> commando para visualizar la historia de los commits en una sola linea de manera grafica
+**alias [nombre] ["comando git"]** --> se usa para dar alias a comandos largos en git.
+**git log --all --graph** --> se usa para mostrar graficamente como funciona los branches.
+**git log --all --graph --decorate --onleline** --> muestra toda la historia del branch de manera grafica con commits.
+**git tag -a [nombre version] -m "Mensaje del tag" [#id commit]** --> comando para crear tags basados en versiones.
+**git tag** --> mustra un listado de todos los tags configurados en el branch.
+**git show-ref --tags** --> muestra que commit esta asociado a un tag especifico.
+**history** -- muestra el historial de comandos digitados en la consola.
+**git push origin --tags** --> enviar cambios de los tags a la branch remoto.
+**git tag -d [nombre del tag]** --> comando para borrar un tag.
+
+
+
+
+ 
