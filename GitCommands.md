@@ -107,3 +107,19 @@ Host *
 
 **git push origin :refs/tags/[nombre del tag]** --> comando para eliminar un tag a nivel remoto.
 
+**git show-branch** --> muestra las ramas existentes y su historia.
+
+**git show-branch --all** --> muestra las ramas existentes y su historia con mas detalles.
+
+**gitk** --> abre un IDE grafico para la gestion y manejo de ramas.
+
+**git clone [url del proyecto de github]** --> comando que sirve para clonar los repositorios desde github. 
+Unicamente funciona para proyecto publicos.
+
+**space + shift + z + z** --> comando para salir ddel editor de la consola.
+
+**git remote add upstream [url repositorio original]** --> comando para agregar los repositorios remotos 
+(cuando se trabaja con forks)
+
+**git remote remove upstream** --> comando para remover los upstream.
+
