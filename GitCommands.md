@@ -123,3 +123,73 @@ Unicamente funciona para proyecto publicos.
 
 **git remote remove upstream** --> comando para remover los upstream.
 
+**git rebase [branch origen]** --> comando para ajustar los cambios (estando ubicados en la rama destino).
+
+**github pages** --> Espacio para ver repositiorios como pagina web.
+
+**git stash** --> Traer cambios temporales.
+
+**git stash pop** --> Recuperar cambios temporales.
+
+**git stash list** --> ver los cambios temporales.
+
+**git stash branch [branch name]** --> colocar los cambios temporales en una nueva rama.
+
+**git stash drop** --> borra los cambios temporales.
+
+**git clean --dry-run** --> limpiar archivos en seco. Realiza una simulacion de los archivos que va a borrar.
+
+**git clean -f** --> Realiza una limpieza de los archivos que han sido modificados (warning. Ejecutar primero **git clean --dry-run**).
+
+**git cherry-pick [hash commit]** --> ubicados en una rama X puede traer un commit especifico de una rama Y.
+
+**git commit --amend** --> Cambios hechos los va a pegar al commit anterior. Tambien tiene la opcion de cambiar del texto del commit.
+
+**git reflog** --> comando para ver todas las ejecuciones hechas en git.
+
+**git reset --SOFT [head correcto]** --> comando que devuelve los cambios al punto donde se le indique a traves del head correcto (cambios en staging).
+
+**git reset --HARD [hash code]** --> comando que devuelve los cambios al punto donde se le indique a traves del hash correcto (restablece todo al punto que se le indique).
+
+**git grep [palabra a buscar]** --> busca la palabra en especifico en la rama seleccionada.
+
+**git grep -n [palabra a buscar]--** --> busca la palabra en especifico indicando la linea donde se encuentra en la rama seleccionada.
+
+**git grep -c [palabra a buscar]--** --> busca la palabra en especifico indicando el numero de veces donde se usa en la rama seleccionada.
+
+**git log -S "palabra buscar"** --> busca la palabra en especifico en los commits.
+
+**git shortlog** --> muestra un log x persona de los miembros del equipo.
+
+**git shortlog -sn** --> muestra las personas que ha hecho commits sobre la rama especifica.
+
+**git shortlog -sn --all** --> muestra la cantidad de todos los commits sobre la rama especifica (incluso los commits que fueron borrados).
+
+**git shortlog -sn --all --no-merges** --> muestra la cantidad de todos los commits excluyendo los merges realizados sobre la rama especifica (incluso los commits que fueron borrados).
+
+**git config --global alias.[nombre al azar] "comando git"** --> esta es la forma de crear alias en la configuracion global interna cuando los comandos  son demasiadamente largos.
+
+**git blame [nombre del archivo]** --> muestra los cambios que se le han hecho al archivo linea a linea, la fecha y el usuario quien ejecuto la modificacion.
+
+**git blame -c [nombre del archivo]** --> muestra los cambios (con identacion mejorada) que se le han hecho al archivo linea a linea, la fecha y el usuario quien ejecuto la modificacion.
+
+**git [comando git] --help** --> abre un manual (html) de como funciona el comando + ejemplos.
+
+**git branch** --> muestra las ramas locales.
+
+**git branch -r** --> muestra las ramas remotas.
+
+**git branch -a** --> muestra todas las ramas (locales y remotas).
+
+
+
+
+
+
+
+
+
+
+
+
+
